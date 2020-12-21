@@ -375,13 +375,13 @@
         bottom: 4px;
     }
     .check::before {
-        background-image: url(/img/icon/checkbox-icon.svg);
+        background-image: url(../img/icon/checkbox-icon.svg);
 
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     }
     .checkbox:checked + .check::before {
         background-color:var(--accent-text-color);
-        background-image: url(/img/icon/check.svg);
+        background-image: url(../img/icon/check.svg);
         border-radius: 2px;
     }
     .agreement span{
