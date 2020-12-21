@@ -288,12 +288,12 @@
         left: 50%;
         transform:translate(-50%,-50%); 
     }
-    /* ---------------Form------------- */
+    /* -----------Заказать услугу------------- */
     .modal-form {
         display: flex;
         flex-direction: column;
     }
-    .modal-title {
+    .title-modal {
         font-weight: bold;
         font-size: 20px;
         line-height: 1.15;
@@ -302,10 +302,10 @@
         color: var(--title-text-color);
         margin-bottom: 12px;
     }
-    .modal-form .form-label {
-         position: relative;
+    .modal-form .label-form {
+        position: relative;
     }
-    .imput-title {
+    .title-imput {
         display: block;
         font-size: 12px;
         line-height: 1.17;
@@ -313,19 +313,19 @@
         color: var(--primary-text-color);
         margin-bottom: 4px;
     }
-    .inputs {
+    .inputs-form {
         width: 448px;
         height: 40px;
         padding: 11px 42px;
+
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         margin-bottom: 10px;
         outline: transparent;
         cursor: pointer;
-
-         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .form-label svg{
+    .label-form svg{
         position: absolute;
         top: 29px;
         left: 12px;
@@ -336,18 +336,18 @@
         width: 448px;
         height: 120px;
         padding: 12px 16px;
+
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         margin-bottom: 20px;
         outline: transparent;
         cursor: pointer;
-
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .inputs:focus-within, .comment:focus-within {
+    .inputs-form:focus-within, .comment:focus-within {
         border: 1px solid var(--accent-text-color);
     }
-    .inputs:focus-within ~ svg {
+    .inputs-form:focus-within ~ svg {
         fill: var(--accent-text-color);
     }
     .comment::placeholder {
@@ -376,8 +376,9 @@
     }
     .check::before {
         background-image: url(../img/icon/checkbox-icon.svg);
-
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .checkbox:checked + .check::before {
         background-color:var(--accent-text-color);
@@ -402,15 +403,15 @@
         height: 50px;
         margin-right: auto;
         margin-left: auto;
-        background-color: var(--accent-text-color);
+
         font-weight: bold;
         font-size: 16px;
         line-height: 1.87;
-        color: var(--hero-text-color);
         border: none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-
+        color: var(--hero-text-color);
+        background-color: var(--accent-text-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .modal-button:hover, 
