@@ -768,6 +768,7 @@
           background-color: var(--accent-text-color);
           color: var(--hero-text-color);
     }
+    /* Подпишитесь на рассылку */
     .get-us ,
     .subscribe-web-studio{
         display: inline-block;
@@ -782,7 +783,6 @@
         text-transform: uppercase;
         color: var(--hero-text-color);
     }
-   /* Подпишитесь на рассылку */
     .footer-mail{
         display: flex;
         align-items: center;
